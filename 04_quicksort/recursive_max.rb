@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 def recursive_max(arr)
-  return 0 if arr.empty?
+  return nil if arr.empty?
   return arr[0] if arr.length == 1
 
   remaining_max = recursive_max(arr[1..])
